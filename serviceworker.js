@@ -1,12 +1,5 @@
 const staticDevCoffee = 'CARDY';
-const assets = [
-	'/',
-	'/index.html',
-	'/style.css',
-	'/script.js',
-	'/qrcode.js',
-	'/assets',
-];
+const assets = ['/', '/index.html', '/style.css', '/script.js', '/qrcode.js'];
 
 self.addEventListener('install', (installEvent) => {
 	installEvent.waitUntil(
