@@ -1,19 +1,11 @@
-const staticDevCoffee = 'cardy';
+const staticDevCoffee = 'CARDY';
 const assets = [
 	'/',
 	'/index.html',
 	'/style.css',
 	'/script.js',
 	'/qrcode.js',
-	'/images/coffee1.jpg',
-	'/images/coffee2.jpg',
-	'/images/coffee3.jpg',
-	'/images/coffee4.jpg',
-	'/images/coffee5.jpg',
-	'/images/coffee6.jpg',
-	'/images/coffee7.jpg',
-	'/images/coffee8.jpg',
-	'/images/coffee9.jpg',
+	'/assets',
 ];
 
 self.addEventListener('install', (installEvent) => {
