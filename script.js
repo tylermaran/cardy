@@ -16,8 +16,8 @@ const links = [
 		link: 'https://www.linkedin.com/in/tyler-maran/',
 	},
 	{
-		name: 'Email (rysolv)',
-		link: 'mailto: tyler@rysolv.com',
+		name: 'tyler@rysolv.com',
+		link: 'mailto: tyler@rysolv.com?subject=Good%20to%20meet!',
 	},
 ];
 
