@@ -1,0 +1,36 @@
+{
+	"name": "CARDY",
+	"short_name": "CARDY",
+	"start_url": "index.html",
+	"display": "standalone",
+	"background_color": "#fdfdfd",
+	"theme_color": "#db4938",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+			"src": "/assets/icons/64.png",
+			"type": "image/png",
+			"sizes": "64x64"
+		},
+		{
+			"src": "/assets/icons/128.png",
+			"type": "image/png",
+			"sizes": "128X128"
+		},
+		{
+			"src": "/assets/icons/256.png",
+			"type": "image/png",
+			"sizes": "256x256"
+		},
+		{
+			"src": "/assets/icons/512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "/assets/icons/1024.png",
+			"type": "image/png",
+			"sizes": "1024x1024"
+		}
+	]
+}
