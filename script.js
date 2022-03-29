@@ -2,6 +2,15 @@
 // Which I guess is a global on the window
 // Idk client side is weird
 
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function () {
+		navigator.serviceWorker
+			.register('/serviceWorker.js')
+			.then((res) => console.log('service worker registered'))
+			.catch((err) => console.log('service worker not registered', err));
+	});
+}
+
 const links = [
 	{
 		name: 'Twitter',
@@ -33,14 +42,13 @@ links.forEach(({ name, link }) => {
 
 	title.innerText = name;
 	new QRCode(image, {
-		text: link,
-		width: 256,
-		height: 256,
 		colorDark: '#000000',
 		colorLight: '#ffffff',
 		correctLevel: QRCode.CorrectLevel.H,
+		height: 256,
+		text: link,
+		width: 256,
 	});
-
 	linkBlock.append(title);
 	linkBlock.append(image);
 	target.append(linkBlock);
