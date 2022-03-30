@@ -1,9 +1,9 @@
-const staticDevCoffee = 'CARDY';
+const static = 'CARDY';
 const assets = ['/', '/index.html', '/style.css', '/script.js', '/qrcode.js'];
 
 self.addEventListener('install', (installEvent) => {
 	installEvent.waitUntil(
-		caches.open(staticDevCoffee).then((cache) => {
+		caches.open(static).then((cache) => {
 			cache.addAll(assets);
 		})
 	);
